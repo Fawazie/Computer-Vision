@@ -11,11 +11,6 @@ This project is a Python-based lane detection system that uses OpenCV for real-t
 The lane detection system processes video frames that can be obtained typically from a dashcam by first converting each frame into a grayscale to simplify edge detection; then, A Gaussian blur is applied to reduce noise, which is then followed by canny edge detection to find the edges and potential lane boundaries. A region of interest is masked, and the Hough Line Transform detects straight lines within the region. Finally, detected lanes are overlapped onto the original video frame, providing real-time lane lines.
 
 ## Optimizations
-
-
-
-## Lessons Learned:
-
-
+Optimizing the lane detection system involves improving processing speed and accuracy. Using Gaussian blur helps reduce noise while keeping details needed for edge detection. I also had to determine the appropriate threshold for cany edge detection to ensure that only relevant edges were identified. 
 
 
